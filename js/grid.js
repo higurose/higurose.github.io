@@ -40,6 +40,12 @@ $(function() {
 	var tagsMenu = document.createDocumentFragment();
 	var tagLink;
 	var currentTagName;
+
+	var allLink = document.createElement('a');
+	allLink.setAttribute('href', '#view-all');
+	allLink.appendChild(document.createTextNode('all'));
+	tagsMenu.appendChild(allLink);
+
 	while (j--) {
 		currentTagName = allTags[j];
 		tagLink = document.createElement('a');
