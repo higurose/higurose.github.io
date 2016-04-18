@@ -50,10 +50,23 @@ $(function() {
 		currentTagName = allTags[j];
 		tagLink = document.createElement('a');
 		tagLink.setAttribute('href', '#' + currentTagName);
+		tagLink.setAttribute('data-tag', currentTagName);
 		tagLink.appendChild(document.createTextNode(currentTagName));
 		tagsMenu.appendChild(tagLink);
 	}
 
 	var tagMenuContainer = document.getElementById('tag-menu');
 	tagMenuContainer.appendChild(tagsMenu);
+
+	$('#tag-menu a[href=#view-all]').on('click', function(event) {
+		taggedImages.show();
+		$grid.masonry('layout');
+	});
+
+	$('#tag-menu a:not([href=#view-all])').on('click', function(event){
+		var selectedTag = event.target.getAttribute('data-tag');
+		$('#grid a[data-tags=' + selectedTag + ']').show();
+		$('#grid a:not([data-tags=' + selectedTag + '])').hide();
+		$grid.masonry('layout');
+	});
 });
