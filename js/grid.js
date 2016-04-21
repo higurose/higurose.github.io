@@ -4,7 +4,8 @@ $(function() {
 	var $grid = $('#grid').masonry({
 	  columnWidth: 200,
 	  gutter: 10,
-	  itemSelector: '#grid a'
+	  itemSelector: '#grid a',
+	  transitionDuration: 0
 	});
 
 	// re-layout grid after each image loads
