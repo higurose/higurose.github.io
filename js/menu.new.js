@@ -15,4 +15,7 @@ window.onload = function()
     
         document.getElementById('il').onclick = function() { toggleVisible('ilmenu'); };
     document.getElementById('ilmenu').style.display = 'none';
+    
+            document.getElementById('merch').onclick = function() { toggleVisible('merchmenu'); };
+    document.getElementById('ilmenu').style.display = 'none';
 };
