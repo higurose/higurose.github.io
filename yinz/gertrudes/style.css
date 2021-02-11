@@ -18,6 +18,9 @@ h1 {
   letter-spacing: 2px;
   color: green;
   text-align: center;
+  margin: 0;
+  padding: 20px 0;
+  
 }
 
 p, li {
