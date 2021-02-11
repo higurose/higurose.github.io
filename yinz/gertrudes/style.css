@@ -3,4 +3,8 @@ p, li, h2, a {
     color: red;
     width: 300px;
     border: 5px solid black;
-  }
+    }
+
+img {
+    align: center;
+    }
