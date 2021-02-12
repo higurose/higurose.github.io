@@ -28,3 +28,9 @@ p, li {
   color: orange;
   line-height: 2;
 }
+
+img {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+}
