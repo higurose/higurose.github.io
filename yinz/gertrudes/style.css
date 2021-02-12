@@ -18,13 +18,13 @@ h1 {
   letter-spacing: 2px;
   color: green;
   text-align: center;
-  margin: 0;
   padding: 20px 0;
+  text-shadow: 3px 3px 1px purple;
   
 }
 
 p, li {
-  font-size: 16;
+  font-size: 16px;
   color: orange;
   line-height: 2;
 }
